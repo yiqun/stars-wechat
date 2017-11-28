@@ -1,0 +1,24 @@
+<!--pages/wechats/wechat.wxml-->
+<import src="/wxParse/wxParse.wxml" />
+<view class="wechat-container" wx:if="{{newsPanelShow}}">
+  <block wx:for="{{wechatData}}" wx:for-item="item" wx:key="uniquekey">
+    <view class="header-container">
+      <image class="wechat-img" src="{{item.pic}}"></image>
+      <view class="wechat-body" bindtap='newsTap' data-id="{{index}}">
+         <text class="wechat-category">{{item.channel}}</text>
+        <text class="wechat-title">{{item.title}}</text>
+        <view class="wechat-info">
+          <text class="wechat-date">{{item.time}}</text>
+          <text class="wechat-author">来自：{{item.weixinname}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="wechat-container" wx:if="{{detailPanelShow}}">
+  <view>
+    <text class="detail-title">{{title}}</text>
+    <button size="mini" bindtap='backTap' class="back-button" >返回</button>
+    <template is="wxParse" data="{{wxParseData: content.nodes}}"/>
+  </view>  
+</view>

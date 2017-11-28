@@ -1,0 +1,83 @@
+<!--pages/constellation/stars/star.wxml-->
+<import src="../../index/star/star-template.wxml" />
+<view class="starry-container">
+  <view class="navbar-container">
+    <scroll-view class="narbar-scroll">
+      <view class="navbar-lucky" bindtap="luckyTap" data-lucky="day">今日运势</view>
+      <view class="navbar-lucky" bindtap="luckyTap" data-lucky="tomorrow">明日运势</view>
+      <view class="navbar-lucky" bindtap="luckyTap" data-lucky="week">本周运势</view>
+      <view class="navbar-lucky" bindtap="luckyTap" data-lucky="month">本月运势</view>
+    </scroll-view>
+  </view>
+  <view class="head-container">
+    <image class="star-img" src="{{imgUrl}}"></image>
+    <view class="star-name">
+      <text class="name">{{starName}}</text>
+      <text class="date">{{chineseDate}}</text>
+    </view>
+    <view class="mark-info">
+      <view class="item-info">
+        <text class="mark">综合指数</text>
+        <template is="starTemplate" data="{{stars: starList.summary_star}}"/>
+      </view>
+      <view class="item-info">
+        <text class="mark">爱情指数</text>
+        <template is="starTemplate" data="{{stars: starList.love_star}}" />
+      </view>
+      <view class="item-info">
+        <text class="mark">财富指数</text>
+        <template is="starTemplate" data="{{stars: starList.money_star}}" />
+      </view>
+      <view class="item-info">
+        <text class="mark">工作指数</text>
+        <template is="starTemplate" data="{{stars: starList.work_star}}" />
+      </view>
+    </view>
+  </view>
+  <view class="mian-container">
+    <view class="lucky-container">
+      <view class="lucky-info">
+        <text class="mark">最适星座</text>
+        <text>{{starList.grxz}}</text>
+      </view>
+      <view class="lucky-info">
+        <text class="mark">幸运颜色</text>
+        <text>{{starList.lucky_color}}</text>
+      </view>
+      <view class="lucky-info">
+        <text class="mark">幸运数字</text>
+        <text>{{starList.lucky_num}}</text>
+      </view>
+      <view class="lucky-info">
+        <text class="mark">吉利方位</text>
+        <text>{{starList.lucky_direction}}</text>
+      </view>
+    </view>
+    <view class="fate-container">
+      <view class="fate" wx:if="{{starList.day_notice}}">
+        <text class="fate-title">运势简评</text>
+        <text class="fate-content">{{starList.day_notice}}</text>
+      </view>
+      <view class="fate" wx:if="{{starList.week_notice}}">
+        <text class="fate-title">运势简评</text>
+        <text class="fate-content">{{starList.week_notice}}</text>
+      </view>
+      <view class="fate" wx:if="{{starList.month_notice}}">
+        <text class="fate-title">运势简评</text>
+        <text class="fate-content">{{starList.month_notice}}</text>
+      </view>
+      <view class="fate">
+        <text class="fate-title">爱情运势</text>
+        <text class="fate-content">{{starList.love_txt}}</text>
+      </view>
+      <view class="fate">
+        <text class="fate-title">工作运势</text>
+        <text class="fate-content">{{starList.work_txt}}</text>
+      </view>
+      <view class="fate">
+        <text class="fate-title">财富运势</text>
+        <text class="fate-content">{{starList.money_txt}}</text>
+      </view>
+    </view>
+  </view>
+</view>

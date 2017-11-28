@@ -1,0 +1,110 @@
+/* pages/constellation/stars/star.wxss */
+@import "../../index/star/star-template.wxss";
+.starry-container {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-container {
+  width: 100%;
+  height: 80rpx;
+  padding-top:25rpx;
+  background-color: #f8f8ff;
+}
+.narbar-scroll {
+  width: 680rpx;
+  margin: 0 auto;
+}
+.navbar-lucky {
+  width: 160rpx;
+  height: 50rpx;
+  line-height:50rpx;
+  font-size: 32rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #ef7a82;
+  float: left;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+}
+.head-container {
+  margin: 20rpx 10rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+}
+.star-img {
+  width: 235rpx;
+  height: 235rpx;
+  float: left;
+  margin-right: 15rpx;
+}
+.star-name {
+  width: 440rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 6rpx 0rpx 5rpx 255rpx;
+  padding-left: 20rpx;
+  border: 1px solid #eee;
+  border-radius: 10rpx;
+  background-color: #ef7a82;
+  font-weight: bold;
+}
+.name {
+  color: #fff;
+  margin-right: 30rpx;
+}
+.mark-info {
+  display: flex;
+  flex-direction: column;
+}
+.item-info {
+  height: 38rpx;
+  line-height: 38rpx;
+  margin-left: 25rpx;
+  margin-bottom: 5rpx;
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+.mark {
+  margin-right: 20rpx;
+  color: #ef7a82;
+  font-weight: bold;
+}
+.lucky-container {
+  width: 100%;
+  height: 80rpx;
+  margin: 20rpx 0;
+}
+.lucky-info {
+  width: 320rpx;
+  height: 38rpx;
+  line-height: 38rpx;
+  margin-left: 50rpx;
+  margin-bottom: 5rpx;
+  float: left;
+}
+.fate-container {
+  display: flex;
+  flex-direction: column;
+}
+.fate {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20rpx 15rpx 35rpx;
+}
+.fate-title {
+  width: 130rpx;
+  height: 40rpx;
+  background-color: #ef7a82;
+  border-radius: 10rpx;
+  margin-bottom: 10rpx;
+  margin-left: 15rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: blod;
+  color: #fff;
+}
+.fate-content {
+  text-indent: 24rpx;
+  font-size: 24rpx;
+}

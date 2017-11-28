@@ -1,0 +1,8 @@
+<view class="joke-container">
+  <block wx:for="{{jokesList}}" wx:for-item="joke" wx:key="data">
+    <view class="joke">
+       <text class="joke-content">{{index + 1}}，{{joke.content}}</text> 
+      <text class="joke-date">{{joke.updatetime}}</text>
+    </view>
+  </block>
+</view>

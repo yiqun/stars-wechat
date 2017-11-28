@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="index-container">
+  <image class="home-img" src='/images/index/sls.jpg'></image>
+  <view class="genre-container">
+    <block wx:for="{{genreList}}" wx:for-item="item" wx:key="id">
+      <view class="icons-item" data-id="{{item.id}}" bindtap="iconsTap">
+        <image class="icons" src="{{item.imgUrl}}"></image>
+        <text class="genre">{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="like-container">
+    <view class="likes">
+      <image class="like-icon" src="/images/icons/kidding.png"></image>
+      <text class="genre">你可能会喜欢</text>
+    </view>
+    <view class="likes">
+      <image class="like-icon" src="/images/icons/kidding.png"></image>
+      <text class="genre">你可能会喜欢</text>
+    </view>
+    <view class="likes">
+      <image class="like-icon" src="/images/icons/kidding.png"></image>
+      <text class="genre">你可能会喜欢</text>
+    </view>
+    <view class="likes">
+      <image class="like-icon" src="/images/icons/kidding.png"></image>
+      <text class="genre">你可能会喜欢</text>
+    </view>
+  </view>
+</view>

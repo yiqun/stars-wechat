@@ -1,0 +1,13 @@
+.star-contianer {
+  width: 120rpx;
+  margin-top: 8rpx;
+}
+.stars-img {
+  display: flex;
+  flex-direction: row;
+}
+.stars-img image {
+  width: 25rpx;
+  height: 25rpx;
+  
+}

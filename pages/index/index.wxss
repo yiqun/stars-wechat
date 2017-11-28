@@ -1,0 +1,60 @@
+.index-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-img {
+  width: 100%;
+  height: 310rpx;
+}
+
+.genre-container {
+  width: 100%;
+  margin: 40rpx auto 20rpx;
+  padding-left: 10rpx;
+  border-bottom: 10rpx solid #eee;
+}
+
+.icons-item {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0px 20rpx 10rpx 6rpx;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.icons {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto 8rpx;
+}
+
+.genre {
+  font-size: 26rpx;
+  text-align: center;
+  vertical-align: middle;
+  color: #666;
+}
+
+.like-container {
+  width: 100%;
+  padding-left: 50rpx;
+  border-bottom: 10rpx solid #eee;
+}
+
+.likes {
+  width: 350rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+  line-height: 60rpx;
+  float: left;
+}
+
+.like-icon {
+  width: 50rpx;
+  height: 50rpx;
+  padding-right: 8rpx;
+  vertical-align: middle;
+}

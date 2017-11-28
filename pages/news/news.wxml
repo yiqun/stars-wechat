@@ -1,0 +1,32 @@
+<!--pages/news/news.wxml-->
+<view class="news-container">
+  <view class="navbar-container">
+    <view class="navbar-items">
+      <text class="navbar-item" bindtap="typeTap" data-type="" data-name="头条">头条</text>
+      <text class="navbar-item" bindtap="typeTap" data-type="shehui" data-name="社会">社会</text>
+      <text class="navbar-item" bindtap="typeTap" data-type="guonei" data-name="国内">国内</text>
+      <text class="navbar-item" bindtap="typeTap" data-type="guoji" data-name="国际">国际</text>
+      <text class="navbar-item" bindtap="typeTap" data-type="yule" data-name="娱乐">娱乐</text>
+      <text class="navbar-item" bindtap="typeTap" data-type="tiyu" data-name="体育">体育</text>
+      <text class="navbar-item" bindtap="typeTap" data-type="junshi" data-name="军事">军事</text>
+      <text class="navbar-item" bindtap="typeTap" data-type="keji" data-name="科技">科技</text>
+      <text class="navbar-item" bindtap="typeTap" data-type="caijing" data-name="财经">财经</text>
+      <text class="navbar-item" bindtap="typeTap" data-type="shishang" data-name="时尚">时尚</text>
+    </view>
+
+  </view>
+  <block wx:for="{{newsData}}" wx:for-item="news" wx:key="uniquekey">
+    <view class="header-container">
+      <image class="news-img" src="{{news.thumbnail_pic_s}}"></image>
+      <view class="news-body">
+        <text wx:if="{{news.category}}" class="news-category">{{news.category}}</text>
+        <text wx:else class="news-category">时尚</text>
+        <text class="news-title" data-url="{{news.url}}" bindtap='titleTap'>{{news.title}}</text>
+        <view class="news-info">
+          <text class="news-date">{{news.date}}</text>
+          <text class="news-author">来自：{{news.author_name}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

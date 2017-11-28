@@ -1,0 +1,65 @@
+<!--pages/constellation/consotellation.wxml-->
+<view class="cons-container">
+  <view class="logo-container">
+    <image class="logo-img" src="/images/stars/logo.gif"></image>
+    <text class="logo-title">聆听星空的密语</text>
+  </view>
+  <view class="header-container">
+    <block wx:for="{{starsList}}" wx:for-item="star" wx:key="name">
+      <view class="stars" bindtap='starTap' data-nikename="{{star.nikeName}}" data-id="{{star.id}}">
+        <image class="star-img" src="{{star.imgUrl}}"></image>
+        <view class="discrep">
+          <text class="star-name">{{star.name}}</text>
+          <text class="star-date">{{star.date}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="title-container">
+    <view class="title-item">
+      <image class="title-img" src="/images/stars/love.jpg"></image>
+      <view class="item-content">
+        <text class="title">爱情</text>
+        <text class="love-content"> 处女座有感情洁癖，只会爱自己想爱的人，即使对方很糟糕。不爱的人，即使条件再好都无法感动到你。是的，很多人会说你很傻，明知道那是一个坑，可是你却心甘情愿地越陷越深……
+        不被全世界祝福你也不介意的，你能随心而爱就已经觉得很满足，幸不幸福不需要向谁炫耀，心里最爱谁，你自己最清楚，旁人不懂，你心知肚明自己有多放不下，所以，盲目也没有关系</text>
+      </view>
+    </view>
+     <view class="title-item">
+      <image class="title-img" src="/images/stars/lucky.jpg"></image>
+      <view class="item-content">
+        <text class="title">性格</text>
+        <text class="love-content"> 白羊座做事向来都是有担当的，及时承认自己的错误，之后改正就好，你并没有把事情想得太复杂，所以像你这样活着会没有那么累，错了就错了呗，不会因为想像各种承担不起的后果而临阵退缩，即使结果可能真的会很严重，也不是推卸责任的借口，说谎的行为要不得</text>
+      </view>
+    </view>
+     <view class="title-item">
+      <image class="title-img" src="/images/stars/fashion.jpg"></image>
+      <view class="item-content">
+        <text class="title">时尚</text>
+        <text class="love-content"> 哪怕水瓶男是个很有深度，很有内涵的男人，但其实在骨子里也是个小男人，大多数都是会听老婆的决定，当然他自己是觉得那是自己疼老婆的表现，自己不过是表现得绅士一点。可想而知水瓶男的家庭里肯定是老婆掌管财务的，每个月只能用固定的零用钱，拿多一点都会被问长问短，突然有急用怎么办呢，作为男人还是得有点钱在手啊，所以水瓶男在老婆面前做过最大胆的就是存私房钱，而且这个小金库藏得可隐秘了！</text>
+      </view>
+    </view>
+     <view class="title-item">
+      <image class="title-img" src="/images/stars/qingan.jpg"></image>
+      <view class="item-content">
+        <text class="title">情感</text>
+        <text class="love-content"> 双鱼女是个感情很丰富的女性，也对爱情有着最完美的幻想，但是也仅止于谈恋爱阶段，从来没更深一步地想过结婚这件事，因为很多美好的爱情都会止步于婚姻面前。当曾经的各种小浪漫小惊喜变成平淡的柴迷油盐酱醋茶，天天讨论甚至争吵谁洗碗，谁去接送孩子，还有应付难搞的婆媳关系，天啊！这是多么可怕的一件事情啊，吓得她赶紧看一部唯美的爱情小说定定惊了！</text>
+      </view>
+    </view>
+    <view class="title-item">
+      <image class="title-img" src="/images/stars/zhishi.jpg"></image>
+      <view class="item-content">
+        <text class="title">知识</text>
+        <text class="love-content">巨蟹女从小就对琐碎的生活家常有着浓浓的兴趣，喜欢跟妈妈去市场买菜，看着妈妈怎样砍价，跟着妈妈去各大打折超市抢打折商品，耳濡目染，慢慢地巨蟹女也成为了一个超会淘又好又便宜商品的大妈，吃东西怎样组合套餐最划算，买衣服鞋袜哪个时候买折扣最多，怎样利用超市积分换最好的商品，这些通通都难不倒巨蟹女，真的一点都不少女啊，不过要是跟着她去买东西绝对适合很划算的！</text>
+      </view>
+    </view>
+    <view class="title-item">
+      <image class="title-img" src="/images/stars/kaiyun.jpg"></image>
+      <view class="item-content">
+        <text class="title">开运</text>
+        <text class="love-content">一颗桃花树，桃花朵朵开的模样，总比光秃秃的模样要迷人。正如爱情绽放的时候比独自一人更加璀璨夺目，生活也会因身旁多了一个心爱的人而变得有滋有味。虽然单身也能过得缤纷多彩，但少了一个可以共同分享或是创造更加丰富生活的人始终让人感觉有点寂寞。在桃花运旺盛的时候，是邂逅心仪对象的最佳时机。只有当自己抓紧机会与机遇的时候，幸福就会紧跟其后。
+
+不管桃花运是旺盛还是低迷，对待爱情的态度仍然需要保持严谨认真和慎重。不要因为桃花运旺盛而不认真对待任何人的好感，也不要因为桃花运低迷而对自己失去自信。爱情本身就是可遇而不可求的情感，得到这种情感便要学会珍惜，若是得不到就耐心等待。毕竟，属于自己的，永远都不会离开</text>
+      </view>
+    </view>
+  </view>
+</view>

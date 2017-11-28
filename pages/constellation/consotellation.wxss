@@ -1,0 +1,113 @@
+/* pages/constellation/consotellation.wxss */
+
+.cons-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0rpx auto;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #f8f8ff;
+  padding: 10rpx 0 0 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.logo-img {
+  width: 270rpx;
+  height: 90rpx;
+  margin-right: 28rpx;
+}
+
+.logo-title {
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  font-style: italic;
+  color: #ef7a82;
+}
+
+.header-container {
+  width: 680rpx;
+  margin: 0rpx auto 30rpx;
+  /* margin-bottom: 30rpx; */
+  border-bottom: 1px solid #eee;
+}
+
+.stars {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0 25rpx 20rpx;
+  /* margin-bottom: 20rpx; */
+}
+
+.star-img {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto 10rpx;
+}
+
+.discrep {
+  display: flex;
+  flex-direction: column;
+}
+
+.star-name {
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.star-date {
+  text-align: center;
+  font-size: 22rpx;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-item {
+  float: left;
+  margin-left: 30rpx;
+}
+
+.title-img {
+  width: 200rpx;
+  height: 150rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35rpx;
+}
+
+.title {
+  width: 120rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #fff;
+  letter-spacing: 8rpx;
+  text-align: center;
+  margin: 5rpx 0;
+  background-color: #ef7a82;
+  border-radius: 20rpx;
+}
+
+.love-content {
+  text-indent: 26rpx;
+  width: 470rpx;
+  height: 100rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
